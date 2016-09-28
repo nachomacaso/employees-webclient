@@ -1,0 +1,21 @@
+<h1>Add and employee</h1>
+
+<%= form_tag '/employees', method: :post do %>
+  <div>
+    <%= label_tag :first_name %>
+    <%= text_field_tag :first_name %>
+  </div>
+  <div>
+    <%= label_tag :last_name %>
+    <%= text_field_tag :last_name %>
+  </div>
+  <div>
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+  </div>
+  <div>
+    <%= label_tag :ssn %>
+    <%= text_field_tag :ssn %>
+  </div>
+  <%= submit_tag 'Submit' %>
+<% end %>
